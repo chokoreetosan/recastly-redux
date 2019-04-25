@@ -40,8 +40,6 @@ class App extends React.Component {
     );
   }
 
-  //TODO: swap out the React components below for the container components
-  //  you wrote in the 'containers' directory.
   render() {
     return (
       <div>
