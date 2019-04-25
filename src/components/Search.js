@@ -10,12 +10,14 @@ class Search extends React.Component {
   //   };
   // }
 
-  // handleInputChange(e) {
-  //   this.props.getYouTubeVideos(e.target.value);
-  //   this.setState({
-  //     value: e.target.value
-  //   });
-  // }
+  handleInputChange(e) {
+    // this.props.getYouTubeVideos(e.target.value);
+    // this.setState({
+    //   value: e.target.value
+    // });
+
+    console.log(this.props);
+  }
 
   render() {
     return (
@@ -24,7 +26,7 @@ class Search extends React.Component {
           className="form-control"
           type="text"
           value={this.props.value}
-          onChange={this.props.handleInputChange}
+          onChange={(e) => {this.props.handleSearchInputChange(e.target.value)}}
         />
         <button className="btn hidden-sm-down">
           <span className="glyphicon glyphicon-search"></span>
